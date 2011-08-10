@@ -1,9 +1,11 @@
 source 'http://rubygems.org'
 
+gem 'bson_ext', '>= 1.3.1'
 gem 'devise', '>= 1.4.2'
 gem 'formtastic'
 gem 'inherited_resources'
 gem 'jquery-rails'
+gem 'mongoid', '>= 1.3.1'
 gem 'rails', '3.1.0.rc5'
 gem 'rake', '= 0.8.7'
 gem 'therubyracer', '>= 0.9.2'
@@ -14,6 +16,7 @@ group :development, :test do
   gem 'database_cleaner', '>= 0.6.7'
   gem 'factory_girl_rails', '>= 1.1.0'
   gem 'launchy', '>= 2.0.5'
+  gem 'mongoid-rspec', '>= 1.1.0'
   gem 'rspec-rails', '>= 2.6.1'
 end
 
