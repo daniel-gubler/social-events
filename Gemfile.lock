@@ -82,6 +82,7 @@ GEM
       actionpack (>= 2.3.7)
       activesupport (>= 2.3.7)
       i18n (~> 0.4)
+    geocoder (1.0.2)
     gherkin (2.4.6)
       json (>= 1.4.6)
     has_scope (0.5.1)
@@ -201,6 +202,7 @@ DEPENDENCIES
   devise (>= 1.4.2)
   factory_girl_rails (>= 1.1.0)
   formtastic
+  geocoder
   inherited_resources
   jquery-rails
   launchy (>= 2.0.5)
