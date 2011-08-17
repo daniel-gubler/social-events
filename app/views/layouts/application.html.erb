@@ -8,9 +8,10 @@
 </head>
 <body>
 <%= render :partial => '/layouts/main_header' %>
+<h2><%= content_for :header %></h2>
 <div id="main-content">
-<%= flash[:notice] %>
-<%= flash[:alert] %>
+<% if flash[:notice] %><div id="notice"><%= flash[:notice] %></div><% end %>
+<% if flash[:alert] %><div id="alert"><%= flash[:alert] %></div><% end %>
 <%= yield %>
 </div>
 </body>

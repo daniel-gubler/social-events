@@ -3,7 +3,7 @@
   <%= form.input :name, :label => "Title" %>
   <%= form.input :start_date, :label => "From" %>
   <%= form.input :end_date, :label => "To" %>
-  <%= form.input :description %>
+  <%= form.input :description, :as => :text %>
   <%= form.input :user_id, :as => :hidden, :value => current_user.id %>
 
   <%= form.inputs :name => "Address", :for => :address do |f| %>
@@ -14,8 +14,6 @@
     <%= f.input :zip %>
   <% end %>
 
-  <%= form.buttons do %>
-    <%= form.commit_button :label => "Save" %>
-  <% end %>
+  <%= form.commit_button :label => "Save" %>
 
 <% end %>

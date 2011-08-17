@@ -1,0 +1,72 @@
+input {
+    padding:2px;
+}
+textarea {
+    padding:4px;
+    font-family:arial,sans-serif;
+    height:125px;
+    width:300px;
+}
+div.cancel {
+    display:inline-block;
+}
+input[type='submit'], input[type='button'], div.cancel a {
+    border-width:1px;
+    border-color:#993300;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    padding:5px 10px 5px 10px;
+    margin:5px 5px 5px 0px;
+    background:url('/assets/event_back.png');
+    color:#CB5F00;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:14px;
+}
+input[type='checkbox'] {
+    margin-right:5px;
+}
+li.required, li.optional, li.commit {
+    list-style:none;
+    margin-bottom:5px;
+}
+label {
+    display:block;
+}
+li.commit {
+    display:inline-block;
+}
+li.error {
+    color:#FF3300;
+}
+li.error input {
+    border-color:#FF3300;
+}
+.inline-errors {
+    display:none;
+}
+#error_explanation {
+    margin-bottom:10px;
+}
+#error_explanation ul {
+    margin-left:30px;
+    list-style:square;
+    color: #FF3300;
+}
+.field_with_errors input {
+    border-color:#FF3300;
+}
+fieldset {
+    border-width:0px;
+    margin-top:15px;
+    padding-top:10px;
+}
+fieldset ol {
+    margin-left:25px;
+}
+legend {
+    background:#FFF795;
+    color:#FF7800;
+    margin:0px 5px 0px 0px;
+    padding:5px 10px 5px 10px;
+}
