@@ -1,2 +1,6 @@
+<% header resource.name %>
+
+<%= resource.start_date.to_formatted_s(:social) %><%= ' - ' + resource.end_date.to_formatted_s(:social) if resource.end_date %>
+
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

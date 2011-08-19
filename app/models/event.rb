@@ -5,10 +5,14 @@ class Event
   field :name, :type => String
   field :description, :type => String
   field :coordinates, :type => Array
-  field :start_date, :type => DateTime
-  field :end_date, :type => DateTime
+  field :start_date, :type => Date
+  field :end_date, :type => Date
+  field :start_time, :type => Time
+  field :end_time, :type => Time
+
   referenced_in :user, :inverse_of => :events
   embeds_one :address
+  accepts_nested_attributes_for :address
 
   geocoded_by :address_string
   after_validation :geocode

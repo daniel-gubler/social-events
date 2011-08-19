@@ -13,4 +13,8 @@ module ApplicationHelper
       link_to "Cancel", @current_page_path
     end
   end
+
+  def timefield(form, resource, method)
+    render :partial => '/layouts/timefield', :locals => { :form => form, :resource => resource, :method => method }
+  end
 end

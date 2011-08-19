@@ -8,7 +8,7 @@ Factory.define :user do |u|
 end
 
 Factory.define :address do |a|
-  a.street '1696 Rainbow Road'
+  a.street1 '1696 Rainbow Road'
   a.city 'Santa Clara'
   a.state 'UT'
   a.country 'USA'

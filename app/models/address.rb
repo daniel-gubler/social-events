@@ -1,20 +1,17 @@
 class Address
   include Mongoid::Document
-  field :name
-  field :company_name
-  field :county
   field :city
   field :state
   field :zip
   field :country
-  field :street
-  field :suite
+  field :street1
+  field :street2
   embedded_in :event, :inverse_of => :address
 
-  validates_presence_of :street, :city, :state, :zip
+  validates_presence_of :street1, :city, :state, :zip
 
   def to_s
-    street.to_s + ', ' + city.to_s + ', ' + state.to_s + ' ' + zip.to_s
+    "#{street1} #{street2}, #{city}, #{state} #{zip}"
   end
 
 end

@@ -1,0 +1,7 @@
+<% time = resource.send(method) %>
+<%= form.input method, :as => :hidden, :input_html => { :class => "#{method}_hidden" } %>
+<input type="text" class="<%= "#{method}_time" %>" onChange="changeTime('<%= method %>')" value="<%= (time.hour > 12 ? time.hour-12 : time.hour).to_s + ':' + time.min.to_s %>">
+<select class="<%= "#{method}_meridiem" %>" onChange="changeTime('<%= method %>')">
+  <option>AM</option>
+  <option<%= ' selected="selected"' if time.hour > 12 %>>PM</option>
+</select>

@@ -70,3 +70,6 @@ legend {
     margin:0px 5px 0px 0px;
     padding:5px 10px 5px 10px;
 }
+input.error {
+    border-color:#FF3300;
+}

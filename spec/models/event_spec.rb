@@ -27,7 +27,7 @@ describe Event do
 
     it "should require a valid address" do
       event = FactoryGirl.build(:event)
-      event.address = FactoryGirl.build(:address, :street => nil)
+      event.address = FactoryGirl.build(:address, :street1 => nil)
       event.should_not be_valid
     end
 
