@@ -17,4 +17,15 @@ module ApplicationHelper
   def timefield(form, resource, method)
     render :partial => '/layouts/timefield', :locals => { :form => form, :resource => resource, :method => method }
   end
+
+  def friendlytime(time)
+    return "" if time.nil?
+    mer = 'am'
+    hour = time.hour
+    if hour > 12
+      mer = 'pm'
+      hour -= 12
+    end
+    "#{hour}:#{time.min} #{mer}"
+  end
 end

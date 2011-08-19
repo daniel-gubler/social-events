@@ -8,7 +8,8 @@ Feature: Manage events
     And I follow "Events"
     And I follow "New Event"
     And I fill in "Title" with "Chess Tourn"
-    And I fill in "From" with "05/11/2015"
+    And I fill in "Start date" with "05/11/2015"
+    And show me the page
     And I fill in "Street" with "200 S 400 E"
     And I fill in "City" with "St George"
     And I fill in "State" with "UT"

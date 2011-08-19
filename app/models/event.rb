@@ -2,8 +2,8 @@ class Event
   include Mongoid::Document
   include Geocoder::Model::Mongoid
 
-  field :name, :type => String
-  field :description, :type => String
+  field :name
+  field :description
   field :coordinates, :type => Array
   field :start_date, :type => Date
   field :end_date, :type => Date

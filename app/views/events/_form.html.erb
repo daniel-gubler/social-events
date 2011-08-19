@@ -8,9 +8,11 @@
   <%= form.input :description, :as => :text %>
   <%= form.input :user_id, :as => :hidden, :value => current_user.id %>
 
+  <% resource.address = Address.new() unless resource.address %>
+
   <%= form.inputs :name => "Address", :for => :address do |f| %>
     <%= f.input :street1, :label => "Street" %>
-    <%= f.input :street2, :label => nil %>
+    <%= f.input :street2, :label => false %>
     <%= f.input :city %>
     <%= f.input :state %>
     <%= f.input :country %>
